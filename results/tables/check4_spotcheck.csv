@@ -1,0 +1,31 @@
+village_id,district,kind,lon,lat,population,snap_m,name,verdict,note
+4492,Larkana,flooded_node,68.1578438,27.6338328,6188.322265625,51.7184770700832,,flood_confirmed,open water all round; village island
+2248,Dadu,flooded_node,67.6962782,26.5646142,6930.60888671875,198.6146510231524,,flood_partial,mixed water and cropland; mask follows the water patches
+2163,Dadu,flooded_node,67.7010739,26.443175499999995,2138.08349609375,96.6903469333134,,embankment_doubt,"S2 water confirmed, but village sits on a continuous bright (dry) raised road; isolation may be overstated"
+2190,Dadu,flooded_node,67.7105017,26.4648054,3037.162109375,106.48401004094278,,flood_confirmed,open water all round
+2466,Dadu,flooded_node,67.6705286,26.9452421,6257.01416015625,487.1800404436763,,flood_confirmed,open water; village mound dry
+2919,Larkana,flooded_node,67.6744238,27.3216982,2716.23876953125,110.4355232188231,,flood_confirmed,open water all round
+2264,Dadu,flooded_node,67.6588327,26.5972389,4753.53662109375,382.7938563051211,,flood_confirmed,water with dry mounds; mask matches
+4704,Larkana,flooded_node,67.7959988,27.6737808,2144.685546875,229.12568515499564,,flood_confirmed,open water; road lines visible but submerged-looking
+3074,Jakobabad,flooded_node,68.0384304,28.069354699999995,2983.56396484375,355.34510932786634,,flood_partial,patchy water between crop strips; mask broadly matches
+2227,Dadu,flooded_node,67.821089,26.434028299999994,7117.16796875,52.07360026514964,,flood_confirmed,open water; dry highway embankment ~1 km NE not reached by the village node
+4646,Larkana,flooded_node,67.9230892,27.6752834,6233.8134765625,91.8246932588005,,flood_confirmed,open water; cropland to S dry
+4671,Larkana,flooded_node,67.7453838,27.552366,2800.076904296875,461.14036384903056,,flood_confirmed,open water; dry embankment roads ~1 km W
+158,Kashmore,cut_off,69.2972459,28.1794615,2352.801025390625,350.03768206321627,,ambiguous,S2 bright/hazy riverine sand and a lake; S2 does not clearly show water at the village; possible S1 false positive
+2194,Dadu,cut_off,67.6437726,26.4996138,1795.7218017578125,55.41806197229674,,embankment_doubt,village on a continuous dry raised road through open water; cut-off status questionable
+2202,Dadu,cut_off,67.6748871,26.5081871,1108.07666015625,263.55580805493474,,flood_confirmed,open water all round
+2244,Dadu,cut_off,67.7741721,26.4930016,4859.6494140625,33.6362118927088,,flood_confirmed,open water; mask matches
+3049,Jakobabad,cut_off,68.2915864,28.168778299999992,3516.17138671875,162.85677509384223,,flood_confirmed,mostly water between canal banks
+2934,Larkana,cut_off,67.7367007,27.318428999999995,3710.1181640625,1228.9611214849929,,flood_confirmed,open water all round
+2537,Dadu,cut_off,67.7680473,27.231249999999992,6348.33544921875,575.4103087086214,,flood_confirmed,open water all round
+2257,Dadu,cut_off,67.6876882,26.5360713,5500.24169921875,73.28732584995338,,flood_confirmed,open water; mask matches
+2397,Dadu,cut_off,67.8416417,26.732571100000005,3315.153076171875,336.61487149085843,,ambiguous,S2 grey/turbid (shallow water or wet soil); mask covers all
+2154,Dadu,cut_off,67.7646988,26.46756779999999,8994.0576171875,215.7042833430327,,embankment_doubt,village on a major dry road embankment through water; isolation questionable
+2516,Dadu,cut_off,67.7907458,27.265347299999995,3773.85107421875,401.4720419678815,,flood_confirmed,open water all round
+2644,Dadu,cut_off,67.8168842,27.048065,7916.33544921875,337.6811111890402,,flood_confirmed,open water; dry cropland 1-2 km S
+1513,Dadu,control_unaffected,67.9569867,27.1130751,13196.443359375,,Bux Lakhiar,control_consistent,"water patches nearby, village and roads dry"
+2451,Dadu,control_unaffected,67.7368154,26.8206466,10818.0791015625,,Essa Panhwar,control_consistent,dry cropland
+2453,Dadu,control_unaffected,67.7243079,26.8295432,7762.18798828125,,Lal Bux Solangi,control_consistent,dry cropland
+2661,Dadu,control_unaffected,67.8297097,26.9957521,6224.25146484375,,Muhammad Hussain Punjabi,control_consistent,some water W; village and road dry
+2899,Dadu,control_unaffected,67.6324138,26.702787699999995,24130.130859375,,Haji Ali Muhammad,control_doubt,village surrounded by open water in S2 yet classed unaffected: likely a road left open (exposure < threshold or bridge); possible false negative
+2053,Larkana,control_unaffected,68.0834468,27.638232100000003,5282.501953125,,Sarang Khuhawar,control_consistent,mixed; village on dry strip

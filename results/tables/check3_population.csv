@@ -1,0 +1,14 @@
+metric,value
+raster_total_pop,55641582.12854797
+pop_within_2km_of_any_village (deduplicated),15845333.533726677
+sum_of_village_buffers_RHAI (population col),49293993.666167736
+sum_of_village_buffers_rebuilt,50102678.16024938
+rebuild_vs_RHAI_max_abs_diff_per_village,5793.463747851551
+rebuild_vs_RHAI_median_rel_diff,0.01323987726410351
+double_count_factor = buffer_sum / dedup_covered,3.1619831828472527
+share_of_covered_pop_in_pixels_with_multiplicity>1,0.6640044035637788
+villages_whose_buffer_overlaps_another,4893.0
+sum_part2km,15845333.533726677
+sum_voronoi,55641582.12854797
+spearman_base_vs_part2km,0.430789730385162
+spearman_base_vs_voronoi,0.23091157551315775

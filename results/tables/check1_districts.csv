@@ -1,0 +1,28 @@
+district,villages_master,villages_routed_normal,villages_routed_flood,graph,source
+Badin,115,115,115,overpass.kumi.systems,routed
+Dadu,708,708,708,overpass.kumi.systems,routed
+Ghotki,90,90,90,overpass.kumi.systems,routed
+Hyderabad,641,641,641,overpass.kumi.systems,routed
+Jakobabad,272,272,272,overpass.kumi.systems,routed
+Jamshoro,20,20,20,overpass.kumi.systems,routed
+Karachi Central,0,0,0,,
+Karachi East,1,1,1,overpass.kumi.systems,routed
+Karachi South,0,0,0,,
+Karachi west,11,11,11,overpass.kumi.systems,routed
+Kashmore,33,33,33,overpass.kumi.systems,routed
+Khairpur,365,365,365,overpass.kumi.systems,routed
+Larkana,847,847,847,overpass.kumi.systems,routed
+Malir,19,19,19,overpass.kumi.systems,rhai_copy_verified_exact
+Matiari,79,79,79,overpass.kumi.systems,routed
+Mirphurkhas,124,124,124,overpass.kumi.systems,routed
+Mithi,470,470,470,overpass.kumi.systems,routed
+Naushahro Firoz,266,266,266,overpass.kumi.systems,routed
+Nawab Shah,78,78,78,overpass.kumi.systems,routed
+Rann of Kutch,5,5,5,overpass.kumi.systems,routed
+Sanghar,169,169,169,overpass.kumi.systems,routed
+Shikarpur,432,432,432,overpass.kumi.systems,routed
+Sukkur,202,202,202,overpass.kumi.systems,routed
+Tando Allahyar,3,3,3,overpass.kumi.systems,routed
+Tando M. Khan,91,91,91,overpass.kumi.systems,routed
+Thatta,57,57,57,overpass.kumi.systems,routed
+Umerkot,61,61,61,overpass.kumi.systems,routed
