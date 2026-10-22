@@ -1,0 +1,4 @@
+alloc,K,jaccard_greedy_vs_additive,flag_lt_0.8
+A,20,0.6666666666666666,True
+B,20,0.48148148148148145,True
+ens,20,0.48148148148148145,True
