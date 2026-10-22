@@ -1,0 +1,231 @@
+Paper A — every number used in the manuscript (regenerate with 32_audit_numbers.py).
+Anything in the text not listed here is UNVERIFIED.
+
+
+[data]
+  data.villages                                             5,159   <- village_master.parquet
+  data.districts_with_villages                                 25   <- village_master.parquet
+  data.pop_dedup_within_2km_M                                15.8   <- check3_population.csv
+  data.double_count_factor                                   3.16   <- check3_population.csv
+  data.worldpop_sindh_M                                      55.6   <- check3_population.csv
+  data.no_road_villages                                       741   <- a2_masks_categories.csv
+  data.no_road_people                                   1,235,625   <- a2_masks_categories.csv
+  data.facilities_A                                         2,725   <- RHAI facilities_tiered.gpkg
+  data.facilities_B                                         3,308   <- RHAI facilities_merged_final.gpkg
+  data.pphi_register                                        1,357   <- RHAI pphi_facilities.csv
+  data.pphi_geocoded                                          616   <- RHAI pphi_geocoded_reviewed.gpkg
+  data.pphi_sat_correct_share                                 84%   <- RHAI geocode_satellite_validation.csv
+  data.pphi_sat_n                                              50   <- RHAI geocode_satellite_validation.csv
+
+[rhai]
+  rhai.dadu_cluster_villages                                   14   <- fixed id list (76-78, 2294-2304)
+  rhai.dadu_cluster_diff_min                                   21   <- a2_scenarioA_paperA_vs_rhai_villages.csv
+  rhai.dadu_cluster_diff_max                                   56   <- a2_scenarioA_paperA_vs_rhai_villages.csv
+  rhai.wmedian_A                                            14.27   <- a0_headline_check.csv
+  rhai.wmedian_B                                             7.10   <- a0_headline_check.csv
+  rhai.overstatement                                         2.01   <- a0_headline_check.csv
+  rhai.same_graph_overstatement                              2.01   <- a2_same_graph_vs_rhai.csv
+  rhai.slower_under_B_rhai                                     17   <- a2_same_graph_vs_rhai.csv
+  rhai.slower_under_B_same                                      0   <- a2_same_graph_vs_rhai.csv
+  rhai.A_villages_changed                                     443   <- a2_same_graph_vs_rhai.csv
+  rhai.A_max_change_min                                      55.8   <- a2_same_graph_vs_rhai.csv
+
+[a1]
+  a1.cropland_kappa                                        0.9994   <- a1_agreement_overall.csv
+  a1.dw_kappa                                                0.39   <- check5_dw_validation.csv
+  a1.dw_precision                                            0.48   <- check5_dw_validation.csv
+  a1.dw_recall                                               0.57   <- check5_dw_validation.csv
+  a1.v1_fringe_precision                                    0.071   <- a1_v2_validation.csv
+  a1.v1_core_recall                                         0.673   <- a1_v2_validation.csv
+  a1.v2_fringe_precision                                    0.259   <- a1_v2_validation.csv
+  a1.v2_core_recall                                         0.645   <- a1_v2_validation.csv
+  a1.v2_success                                             False   <- a1_v2_verdict.csv
+
+[a2]
+  a2.newly_isolated_villages_A                                125   <- a2_masks_categories.csv
+  a2.newly_isolated_people_A                              141,755   <- a2_masks_categories.csv
+  a2.delayed_people_A                                   1,189,654   <- a2_masks_categories.csv
+  a2.newly_isolated_villages_B                                118   <- a2_masks_categories.csv
+  a2.newly_isolated_people_B                              129,976   <- a2_masks_categories.csv
+  a2.delayed_people_B                                     607,987   <- a2_masks_categories.csv
+  a2.h1_top10_share_B                                        0.37   <- a2_masks_h1h2.csv
+  a2.h1_gini_villages_B                                      0.57   <- a2_masks_h1h2.csv
+
+[h2]
+  h2.ratio_added_ph_2022                                     4.13   <- a2_masks_h1h2.csv
+  h2.ratio_added_ph_2022_lo                                  3.36   <- a2_masks_h2_bootstrap.csv
+  h2.ratio_added_ph_2022_hi                                  5.16   <- a2_masks_h2_bootstrap.csv
+  h2.ratio_newly_isolated_2022                               1.06   <- a2_masks_h1h2.csv
+  h2.ratio_newly_isolated_2022_lo                            1.01   <- a2_masks_h2_bootstrap.csv
+  h2.ratio_newly_isolated_2022_hi                            1.12   <- a2_masks_h2_bootstrap.csv
+  h2.ratio_cov60_shortfall_2022                              3.39   <- a2_masks_h1h2.csv
+  h2.ratio_cov60_shortfall_2022_lo                           2.85   <- a2_masks_h2_bootstrap.csv
+  h2.ratio_cov60_shortfall_2022_hi                           4.08   <- a2_masks_h2_bootstrap.csv
+  h2.ratio_wmedian_2022                                      2.42   <- a2_masks_h1h2.csv
+  h2.ratio_wmedian_2022_lo                                   2.27   <- a2_masks_h2_bootstrap.csv
+  h2.ratio_wmedian_2022_hi                                   2.56   <- a2_masks_h2_bootstrap.csv
+  h2.range_cov60_shortfall_min                               2.06   <- a7_h2_by_config.csv
+  h2.range_cov60_shortfall_max                              19.04   <- a7_h2_by_config.csv
+  h2.range_isolated_dedup_min                                1.09   <- a7_h2_by_config.csv
+  h2.range_isolated_dedup_max                                1.64   <- a7_h2_by_config.csv
+  h2.range_added_ph_dedup_min                                2.35   <- a7_h2_by_config.csv
+  h2.range_added_ph_dedup_max                                5.91   <- a7_h2_by_config.csv
+
+[a3]
+  a3.top1_baseline_rhai                                     0.985   <- a3_matcher_overall.csv
+  a3.reviewed_brier_baseline_rhai                           0.326   <- a3_matcher_overall.csv
+  a3.reviewed_auc_baseline_rhai                             0.666   <- a3_matcher_overall.csv
+  a3.top1_gbm                                               0.972   <- a3_matcher_overall.csv
+  a3.reviewed_brier_gbm                                     0.218   <- a3_matcher_overall.csv
+  a3.reviewed_auc_gbm                                       0.707   <- a3_matcher_overall.csv
+  a3.unlocated                                                741   <- a3_facilities.parquet
+  a3.median_p_nomatch                                        0.70   <- a3_placement_probs.parquet
+
+[a4]
+  a4.placed_per_draw                                          227   <- a4/base/placements.parquet
+  a4.wmedian_ens                                             6.54   <- a4_province_summary.csv
+  a4.wmedian_ens_lo                                          6.34   <- a4_province_summary.csv
+  a4.wmedian_ens_hi                                          6.67   <- a4_province_summary.csv
+  a4.overstatement_A_vs_ens                                  2.18   <- a4 tables
+  a4.overstatement_B_vs_ens                                  1.09   <- a4 tables
+
+[a7]
+  a7.regret_A_cov60_K20                                     0.469   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_A_cov60_K20_lo                                  0.464   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_A_cov60_K20_hi                                  0.474   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.absregret_A_cov60_K20                                 29,646   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_B_cov60_K20                                     0.020   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_B_cov60_K20_lo                                  0.020   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_B_cov60_K20_hi                                  0.021   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.absregret_B_cov60_K20                                  1,509   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_ens_cov60_K20                                   0.000   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_ens_cov60_K20_lo                                0.000   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_ens_cov60_K20_hi                                0.002   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.absregret_ens_cov60_K20                                   25   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.achievable_cov60_K20                                  63,536   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_A_iso_K20                                       0.088   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_A_iso_K20_lo                                    0.087   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_A_iso_K20_hi                                    0.089   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.absregret_A_iso_K20                                    8,183   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_B_iso_K20                                       0.020   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_B_iso_K20_lo                                    0.020   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_B_iso_K20_hi                                    0.021   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.absregret_B_iso_K20                                    1,509   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_ens_iso_K20                                     0.000   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_ens_iso_K20_lo                                  0.000   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_ens_iso_K20_hi                                  0.001   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.absregret_ens_iso_K20                                     25   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.achievable_iso_K20                                    63,536   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_A_ph_K20                                        0.879   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_A_ph_K20_lo                                     0.871   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_A_ph_K20_hi                                     0.887   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.absregret_A_ph_K20                                    22,161   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_B_ph_K20                                        0.178   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_B_ph_K20_lo                                     0.162   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_B_ph_K20_hi                                     0.193   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.absregret_B_ph_K20                                     4,488   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_ens_ph_K20                                      0.007   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_ens_ph_K20_lo                                   0.005   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_ens_ph_K20_hi                                   0.008   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.absregret_ens_ph_K20                                     169   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.achievable_ph_K20                                     25,205   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.evpi_cov60_K20                                          24.6   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.evpi_cov60_K20_hi                                       73.7   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.evpi_additive_K20                                      2,067   <- a7_2022_D3_T0.6_N200_K50_evppi_validation.csv
+  a7.jaccard_A_ens_K20                                       0.29   <- a7_2022_D3_T0.6_N200_K50_jaccard.csv
+  a7.jaccard_B_ens_K20                                       0.90   <- a7_2022_D3_T0.6_N200_K50_jaccard.csv
+  a7.sens_regret_A_cov60_min                                0.045   <- a7_sensitivity_regret.csv
+  a7.sens_regret_A_cov60_max                                0.631   <- a7_sensitivity_regret.csv
+  a7.sens_regret_A_iso_max                                  0.138   <- a7_sensitivity_regret.csv
+  a7.sens_regret_B_cov60_max                                0.029   <- a7_sensitivity_regret.csv
+
+[a6]
+  a6.all.2022_LODO_CV.gbm.aucpr                             0.088   <- a6_metrics.csv
+  a6.all.2022_LODO_CV.gbm.lo                                0.057   <- a6_metrics.csv
+  a6.all.2022_LODO_CV.gbm.hi                                0.129   <- a6_metrics.csv
+  a6.all.2022_LODO_CV.base_fac.aucpr                        0.026   <- a6_metrics.csv
+  a6.all.2022_LODO_CV.base_fac.lo                           0.015   <- a6_metrics.csv
+  a6.all.2022_LODO_CV.base_fac.hi                           0.037   <- a6_metrics.csv
+  a6.all.2022_LODO_CV.base_river.aucpr                      0.010   <- a6_metrics.csv
+  a6.all.2022_LODO_CV.base_river.lo                         0.004   <- a6_metrics.csv
+  a6.all.2022_LODO_CV.base_river.hi                         0.024   <- a6_metrics.csv
+  a6.all.2022_LODO_CV.prevalence                           0.0121   <- a6_metrics.csv
+  a6.all.2025_out_of_event.gbm.aucpr                        0.156   <- a6_metrics.csv
+  a6.all.2025_out_of_event.gbm.lo                           0.049   <- a6_metrics.csv
+  a6.all.2025_out_of_event.gbm.hi                           0.233   <- a6_metrics.csv
+  a6.all.2025_out_of_event.base_fac.aucpr                   0.016   <- a6_metrics.csv
+  a6.all.2025_out_of_event.base_fac.lo                      0.007   <- a6_metrics.csv
+  a6.all.2025_out_of_event.base_fac.hi                      0.024   <- a6_metrics.csv
+  a6.all.2025_out_of_event.base_river.aucpr                 0.005   <- a6_metrics.csv
+  a6.all.2025_out_of_event.base_river.lo                    0.001   <- a6_metrics.csv
+  a6.all.2025_out_of_event.base_river.hi                    0.009   <- a6_metrics.csv
+  a6.all.2025_out_of_event.prevalence                      0.0037   <- a6_metrics.csv
+  a6.excl_fringe.2022_LODO_CV.gbm.aucpr                     0.075   <- a6_metrics.csv
+  a6.excl_fringe.2022_LODO_CV.gbm.lo                        0.029   <- a6_metrics.csv
+  a6.excl_fringe.2022_LODO_CV.gbm.hi                        0.146   <- a6_metrics.csv
+  a6.excl_fringe.2022_LODO_CV.base_fac.aucpr                0.015   <- a6_metrics.csv
+  a6.excl_fringe.2022_LODO_CV.base_fac.lo                   0.006   <- a6_metrics.csv
+  a6.excl_fringe.2022_LODO_CV.base_fac.hi                   0.031   <- a6_metrics.csv
+  a6.excl_fringe.2022_LODO_CV.base_river.aucpr              0.004   <- a6_metrics.csv
+  a6.excl_fringe.2022_LODO_CV.base_river.lo                 0.002   <- a6_metrics.csv
+  a6.excl_fringe.2022_LODO_CV.base_river.hi                 0.013   <- a6_metrics.csv
+  a6.excl_fringe.2022_LODO_CV.prevalence                   0.0069   <- a6_metrics.csv
+  a6.excl_fringe.2025_out_of_event.gbm.aucpr                0.086   <- a6_metrics.csv
+  a6.excl_fringe.2025_out_of_event.gbm.lo                   0.016   <- a6_metrics.csv
+  a6.excl_fringe.2025_out_of_event.gbm.hi                   0.203   <- a6_metrics.csv
+  a6.excl_fringe.2025_out_of_event.base_fac.aucpr           0.006   <- a6_metrics.csv
+  a6.excl_fringe.2025_out_of_event.base_fac.lo              0.002   <- a6_metrics.csv
+  a6.excl_fringe.2025_out_of_event.base_fac.hi              0.016   <- a6_metrics.csv
+  a6.excl_fringe.2025_out_of_event.base_river.aucpr          0.002   <- a6_metrics.csv
+  a6.excl_fringe.2025_out_of_event.base_river.lo            0.001   <- a6_metrics.csv
+  a6.excl_fringe.2025_out_of_event.base_river.hi            0.004   <- a6_metrics.csv
+  a6.excl_fringe.2025_out_of_event.prevalence              0.0011   <- a6_metrics.csv
+  a6.top_shap_feature                                     pop_1km   <- a6_shap.csv
+
+[a1]
+  a1.cropland_cells                                       555,309   <- a1_agreement_overall.csv
+  a1.v1_core_precision                                       0.87   <- a1_v2_validation.csv
+
+[a2]
+  a2.closed_edges_2022                                     13,265   <- a2_2x2_by_threshold.csv
+  a2.closed_edges_2025                                      4,067   <- a2_2x2_by_threshold.csv
+  a2.delayed_villages_A                                       501   <- a2_masks_categories.csv
+  a2.delayed_villages_B                                       253   <- a2_masks_categories.csv
+  a2.newly_isolated_villages_A_2025                            11   <- a2_masks_categories.csv
+  a2.newly_isolated_people_A_2025                          13,412   <- a2_masks_categories.csv
+  a2.delayed_villages_A_2025                                   32   <- a2_masks_categories.csv
+  a2.delayed_people_A_2025                                136,221   <- a2_masks_categories.csv
+  a2.newly_isolated_villages_B_2025                            11   <- a2_masks_categories.csv
+  a2.newly_isolated_people_B_2025                          13,412   <- a2_masks_categories.csv
+  a2.delayed_villages_B_2025                                   18   <- a2_masks_categories.csv
+  a2.delayed_people_B_2025                                 79,977   <- a2_masks_categories.csv
+  a2.iso_r500_B                                               141   <- a2_masks_categories.csv
+  a2.iso_r2000_B                                               57   <- a2_masks_categories.csv
+
+[h2]
+  h2.ratio_added_ph_2025                                     4.06   <- a2_masks_h1h2.csv
+  h2.ratio_cov60_shortfall_2025                              19.0   <- a2_masks_h1h2.csv
+  h2.ratio_newly_isolated_2025                               1.00   <- a2_masks_h1h2.csv
+
+[a3]
+  a3.rejected                                                 127   <- a3_facilities.parquet
+
+[a4]
+  a4.wmedian_q05                                             6.31   <- a4_province_summary.csv
+  a4.wmedian_q2                                              6.71   <- a4_province_summary.csv
+
+[a6]
+  a6.segments                                             547,323   <- a6_segments.parquet / a6_segment_counts.csv
+  a6.positives_2025                                         2,026   <- a6_segments.parquet
+  a6.districts_ge20_2025                                        7   <- a6_segments.parquet
+  a6.top_shap_label                                population within about 1 km   <- a6_shap.csv
+
+[a7]
+  a7.evpi_additive_ratio                                       84   <- a7_2022_D3_T0.6_N200_K50_evppi_validation.csv
+  a7.regret_A_cov60_K5                                      0.865   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_A_cov60_K50                                     0.269   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.regret_A_cov60_emb                                     0.188   <- a7_sensitivity_regret.csv
+  a7.regret_A_cov60_2025                                    0.220   <- a7_sensitivity_regret.csv
+  a7.regret_A_cov60_K20_pct                                  47 %   <- a7_2022_D3_T0.6_N200_K50_regret.csv
+  a7.sens_regret_A_cov60_min_pct                                4   <- a7_sensitivity_regret.csv
+  a7.sens_regret_A_cov60_max_pct                             63 %   <- a7_sensitivity_regret.csv

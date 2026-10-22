@@ -1,0 +1,982 @@
+{
+ "data.villages": {
+  "value": 5159.0,
+  "display": "5,159",
+  "source": "village_master.parquet"
+ },
+ "data.districts_with_villages": {
+  "value": 25.0,
+  "display": "25",
+  "source": "village_master.parquet"
+ },
+ "data.pop_dedup_within_2km_M": {
+  "value": 15.845333533726675,
+  "display": "15.8",
+  "source": "check3_population.csv"
+ },
+ "data.double_count_factor": {
+  "value": 3.1619831828472527,
+  "display": "3.16",
+  "source": "check3_population.csv"
+ },
+ "data.worldpop_sindh_M": {
+  "value": 55.64158212854797,
+  "display": "55.6",
+  "source": "check3_population.csv"
+ },
+ "data.no_road_villages": {
+  "value": 741.0,
+  "display": "741",
+  "source": "a2_masks_categories.csv"
+ },
+ "data.no_road_people": {
+  "value": 1235625.3108969105,
+  "display": "1,235,625",
+  "source": "a2_masks_categories.csv"
+ },
+ "data.facilities_A": {
+  "value": 2725.0,
+  "display": "2,725",
+  "source": "RHAI facilities_tiered.gpkg"
+ },
+ "data.facilities_B": {
+  "value": 3308.0,
+  "display": "3,308",
+  "source": "RHAI facilities_merged_final.gpkg"
+ },
+ "data.pphi_register": {
+  "value": 1357.0,
+  "display": "1,357",
+  "source": "RHAI pphi_facilities.csv"
+ },
+ "data.pphi_geocoded": {
+  "value": 616.0,
+  "display": "616",
+  "source": "RHAI pphi_geocoded_reviewed.gpkg"
+ },
+ "data.pphi_sat_correct_share": {
+  "value": 0.84,
+  "display": "84%",
+  "source": "RHAI geocode_satellite_validation.csv"
+ },
+ "data.pphi_sat_n": {
+  "value": 50.0,
+  "display": "50",
+  "source": "RHAI geocode_satellite_validation.csv"
+ },
+ "rhai.dadu_cluster_villages": {
+  "value": 14.0,
+  "display": "14",
+  "source": "fixed id list (76-78, 2294-2304)"
+ },
+ "rhai.dadu_cluster_diff_min": {
+  "value": 20.8960628114234,
+  "display": "21",
+  "source": "a2_scenarioA_paperA_vs_rhai_villages.csv"
+ },
+ "rhai.dadu_cluster_diff_max": {
+  "value": 55.76254804635434,
+  "display": "56",
+  "source": "a2_scenarioA_paperA_vs_rhai_villages.csv"
+ },
+ "rhai.wmedian_A": {
+  "value": 14.270115668379889,
+  "display": "14.27",
+  "source": "a0_headline_check.csv"
+ },
+ "rhai.wmedian_B": {
+  "value": 7.098866275905168,
+  "display": "7.10",
+  "source": "a0_headline_check.csv"
+ },
+ "rhai.overstatement": {
+  "value": 2.010196433311504,
+  "display": "2.01",
+  "source": "a0_headline_check.csv"
+ },
+ "rhai.same_graph_overstatement": {
+  "value": 2.0101602547307698,
+  "display": "2.01",
+  "source": "a2_same_graph_vs_rhai.csv"
+ },
+ "rhai.slower_under_B_rhai": {
+  "value": 17.0,
+  "display": "17",
+  "source": "a2_same_graph_vs_rhai.csv"
+ },
+ "rhai.slower_under_B_same": {
+  "value": 0.0,
+  "display": "0",
+  "source": "a2_same_graph_vs_rhai.csv"
+ },
+ "rhai.A_villages_changed": {
+  "value": 443.0,
+  "display": "443",
+  "source": "a2_same_graph_vs_rhai.csv"
+ },
+ "rhai.A_max_change_min": {
+  "value": 55.76254804635434,
+  "display": "55.8",
+  "source": "a2_same_graph_vs_rhai.csv"
+ },
+ "a1.cropland_kappa": {
+  "value": 0.9994058000660376,
+  "display": "0.9994",
+  "source": "a1_agreement_overall.csv"
+ },
+ "a1.dw_kappa": {
+  "value": 0.3935090990019709,
+  "display": "0.39",
+  "source": "check5_dw_validation.csv"
+ },
+ "a1.dw_precision": {
+  "value": 0.4814285714285714,
+  "display": "0.48",
+  "source": "check5_dw_validation.csv"
+ },
+ "a1.dw_recall": {
+  "value": 0.5697459611296746,
+  "display": "0.57",
+  "source": "check5_dw_validation.csv"
+ },
+ "a1.v1_fringe_precision": {
+  "value": 0.0714285714285714,
+  "display": "0.071",
+  "source": "a1_v2_validation.csv"
+ },
+ "a1.v1_core_recall": {
+  "value": 0.6728971962616822,
+  "display": "0.673",
+  "source": "a1_v2_validation.csv"
+ },
+ "a1.v2_fringe_precision": {
+  "value": 0.2592592592592592,
+  "display": "0.259",
+  "source": "a1_v2_validation.csv"
+ },
+ "a1.v2_core_recall": {
+  "value": 0.6448598130841121,
+  "display": "0.645",
+  "source": "a1_v2_validation.csv"
+ },
+ "a1.v2_success": {
+  "value": "False",
+  "display": "False",
+  "source": "a1_v2_verdict.csv"
+ },
+ "a2.newly_isolated_villages_A": {
+  "value": 125.0,
+  "display": "125",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.newly_isolated_people_A": {
+  "value": 141754.906863356,
+  "display": "141,755",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.delayed_people_A": {
+  "value": 1189653.7889510596,
+  "display": "1,189,654",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.newly_isolated_villages_B": {
+  "value": 118.0,
+  "display": "118",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.newly_isolated_people_B": {
+  "value": 129976.43280732818,
+  "display": "129,976",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.delayed_people_B": {
+  "value": 607987.3282197809,
+  "display": "607,987",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.h1_top10_share_B": {
+  "value": 0.3706899265860461,
+  "display": "0.37",
+  "source": "a2_masks_h1h2.csv"
+ },
+ "a2.h1_gini_villages_B": {
+  "value": 0.5725033299708895,
+  "display": "0.57",
+  "source": "a2_masks_h1h2.csv"
+ },
+ "h2.ratio_added_ph_2022": {
+  "value": 4.133855335265311,
+  "display": "4.13",
+  "source": "a2_masks_h1h2.csv"
+ },
+ "h2.ratio_added_ph_2022_lo": {
+  "value": 3.35655659436558,
+  "display": "3.36",
+  "source": "a2_masks_h2_bootstrap.csv"
+ },
+ "h2.ratio_added_ph_2022_hi": {
+  "value": 5.16400818583142,
+  "display": "5.16",
+  "source": "a2_masks_h2_bootstrap.csv"
+ },
+ "h2.ratio_newly_isolated_2022": {
+  "value": 1.0574850003019511,
+  "display": "1.06",
+  "source": "a2_masks_h1h2.csv"
+ },
+ "h2.ratio_newly_isolated_2022_lo": {
+  "value": 1.013418262970454,
+  "display": "1.01",
+  "source": "a2_masks_h2_bootstrap.csv"
+ },
+ "h2.ratio_newly_isolated_2022_hi": {
+  "value": 1.1166196389042131,
+  "display": "1.12",
+  "source": "a2_masks_h2_bootstrap.csv"
+ },
+ "h2.ratio_cov60_shortfall_2022": {
+  "value": 3.3850265611445973,
+  "display": "3.39",
+  "source": "a2_masks_h1h2.csv"
+ },
+ "h2.ratio_cov60_shortfall_2022_lo": {
+  "value": 2.851231935064512,
+  "display": "2.85",
+  "source": "a2_masks_h2_bootstrap.csv"
+ },
+ "h2.ratio_cov60_shortfall_2022_hi": {
+  "value": 4.0789449982658,
+  "display": "4.08",
+  "source": "a2_masks_h2_bootstrap.csv"
+ },
+ "h2.ratio_wmedian_2022": {
+  "value": 2.41516970667376,
+  "display": "2.42",
+  "source": "a2_masks_h1h2.csv"
+ },
+ "h2.ratio_wmedian_2022_lo": {
+  "value": 2.2657559546491446,
+  "display": "2.27",
+  "source": "a2_masks_h2_bootstrap.csv"
+ },
+ "h2.ratio_wmedian_2022_hi": {
+  "value": 2.56252500343401,
+  "display": "2.56",
+  "source": "a2_masks_h2_bootstrap.csv"
+ },
+ "h2.range_cov60_shortfall_min": {
+  "value": 2.0649658818496355,
+  "display": "2.06",
+  "source": "a7_h2_by_config.csv"
+ },
+ "h2.range_cov60_shortfall_max": {
+  "value": 19.035688398255186,
+  "display": "19.04",
+  "source": "a7_h2_by_config.csv"
+ },
+ "h2.range_isolated_dedup_min": {
+  "value": 1.0896332615753206,
+  "display": "1.09",
+  "source": "a7_h2_by_config.csv"
+ },
+ "h2.range_isolated_dedup_max": {
+  "value": 1.636172547162688,
+  "display": "1.64",
+  "source": "a7_h2_by_config.csv"
+ },
+ "h2.range_added_ph_dedup_min": {
+  "value": 2.3533536535893185,
+  "display": "2.35",
+  "source": "a7_h2_by_config.csv"
+ },
+ "h2.range_added_ph_dedup_max": {
+  "value": 5.905399059324416,
+  "display": "5.91",
+  "source": "a7_h2_by_config.csv"
+ },
+ "a3.top1_baseline_rhai": {
+  "value": 0.9853896103896104,
+  "display": "0.985",
+  "source": "a3_matcher_overall.csv"
+ },
+ "a3.reviewed_brier_baseline_rhai": {
+  "value": 0.3257748955020706,
+  "display": "0.326",
+  "source": "a3_matcher_overall.csv"
+ },
+ "a3.reviewed_auc_baseline_rhai": {
+  "value": 0.6664683290961216,
+  "display": "0.666",
+  "source": "a3_matcher_overall.csv"
+ },
+ "a3.top1_gbm": {
+  "value": 0.9724025974025974,
+  "display": "0.972",
+  "source": "a3_matcher_overall.csv"
+ },
+ "a3.reviewed_brier_gbm": {
+  "value": 0.2175630612669263,
+  "display": "0.218",
+  "source": "a3_matcher_overall.csv"
+ },
+ "a3.reviewed_auc_gbm": {
+  "value": 0.70725374587548,
+  "display": "0.707",
+  "source": "a3_matcher_overall.csv"
+ },
+ "a3.unlocated": {
+  "value": 741.0,
+  "display": "741",
+  "source": "a3_facilities.parquet"
+ },
+ "a3.median_p_nomatch": {
+  "value": 0.695660459544811,
+  "display": "0.70",
+  "source": "a3_placement_probs.parquet"
+ },
+ "a4.placed_per_draw": {
+  "value": 227.06,
+  "display": "227",
+  "source": "a4/base/placements.parquet"
+ },
+ "a4.wmedian_ens": {
+  "value": 6.542725133895874,
+  "display": "6.54",
+  "source": "a4_province_summary.csv"
+ },
+ "a4.wmedian_ens_lo": {
+  "value": 6.33811274766922,
+  "display": "6.34",
+  "source": "a4_province_summary.csv"
+ },
+ "a4.wmedian_ens_hi": {
+  "value": 6.666220915317536,
+  "display": "6.67",
+  "source": "a4_province_summary.csv"
+ },
+ "a4.overstatement_A_vs_ens": {
+  "value": 2.1810267968534083,
+  "display": "2.18",
+  "source": "a4 tables"
+ },
+ "a4.overstatement_B_vs_ens": {
+  "value": 1.0850014528545753,
+  "display": "1.09",
+  "source": "a4 tables"
+ },
+ "a7.regret_A_cov60_K20": {
+  "value": 0.4690873377580117,
+  "display": "0.469",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_A_cov60_K20_lo": {
+  "value": 0.4642101399228417,
+  "display": "0.464",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_A_cov60_K20_hi": {
+  "value": 0.4744508644673885,
+  "display": "0.474",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.absregret_A_cov60_K20": {
+  "value": 29646.020042165444,
+  "display": "29,646",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_B_cov60_K20": {
+  "value": 0.0204736888385829,
+  "display": "0.020",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_B_cov60_K20_lo": {
+  "value": 0.0198950983931519,
+  "display": "0.020",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_B_cov60_K20_hi": {
+  "value": 0.0214337601739899,
+  "display": "0.021",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.absregret_B_cov60_K20": {
+  "value": 1508.5501612643152,
+  "display": "1,509",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_ens_cov60_K20": {
+  "value": 0.0003970317179049,
+  "display": "0.000",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_ens_cov60_K20_lo": {
+  "value": 0.0,
+  "display": "0.000",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_ens_cov60_K20_hi": {
+  "value": 0.0015848926804159,
+  "display": "0.002",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.absregret_ens_cov60_K20": {
+  "value": 24.56219772942364,
+  "display": "25",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.achievable_cov60_K20": {
+  "value": 63536.34170705497,
+  "display": "63,536",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_A_iso_K20": {
+  "value": 0.0878168574153776,
+  "display": "0.088",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_A_iso_K20_lo": {
+  "value": 0.0866292641902069,
+  "display": "0.087",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_A_iso_K20_hi": {
+  "value": 0.0892155198701812,
+  "display": "0.089",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.absregret_A_iso_K20": {
+  "value": 8183.452756421119,
+  "display": "8,183",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_B_iso_K20": {
+  "value": 0.0204736888385854,
+  "display": "0.020",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_B_iso_K20_lo": {
+  "value": 0.0198950983931544,
+  "display": "0.020",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_B_iso_K20_hi": {
+  "value": 0.0214337601739932,
+  "display": "0.021",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.absregret_B_iso_K20": {
+  "value": 1508.5501612643152,
+  "display": "1,509",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_ens_iso_K20": {
+  "value": 0.0003970317179049,
+  "display": "0.000",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_ens_iso_K20_lo": {
+  "value": 0.0,
+  "display": "0.000",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_ens_iso_K20_hi": {
+  "value": 0.0012003923846651,
+  "display": "0.001",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.absregret_ens_iso_K20": {
+  "value": 24.56219772942364,
+  "display": "25",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.achievable_iso_K20": {
+  "value": 63536.3417070559,
+  "display": "63,536",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_A_ph_K20": {
+  "value": 0.8792483394960278,
+  "display": "0.879",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_A_ph_K20_lo": {
+  "value": 0.871086917799192,
+  "display": "0.871",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_A_ph_K20_hi": {
+  "value": 0.8869357503851265,
+  "display": "0.887",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.absregret_A_ph_K20": {
+  "value": 22161.050591863583,
+  "display": "22,161",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_B_ph_K20": {
+  "value": 0.1780470882089822,
+  "display": "0.178",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_B_ph_K20_lo": {
+  "value": 0.1624485694916621,
+  "display": "0.162",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_B_ph_K20_hi": {
+  "value": 0.1931543718008767,
+  "display": "0.193",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.absregret_B_ph_K20": {
+  "value": 4487.595088089535,
+  "display": "4,488",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_ens_ph_K20": {
+  "value": 0.0067021540404355,
+  "display": "0.007",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_ens_ph_K20_lo": {
+  "value": 0.0051676882093209,
+  "display": "0.005",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_ens_ph_K20_hi": {
+  "value": 0.008468796925041,
+  "display": "0.008",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.absregret_ens_ph_K20": {
+  "value": 168.92471454616447,
+  "display": "169",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.achievable_ph_K20": {
+  "value": 25204.54073824692,
+  "display": "25,205",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.evpi_cov60_K20": {
+  "value": 24.56219772942364,
+  "display": "24.6",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.evpi_cov60_K20_hi": {
+  "value": 73.68659318827093,
+  "display": "73.7",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.evpi_additive_K20": {
+  "value": 2066.674813312522,
+  "display": "2,067",
+  "source": "a7_2022_D3_T0.6_N200_K50_evppi_validation.csv"
+ },
+ "a7.jaccard_A_ens_K20": {
+  "value": 0.2903225806451613,
+  "display": "0.29",
+  "source": "a7_2022_D3_T0.6_N200_K50_jaccard.csv"
+ },
+ "a7.jaccard_B_ens_K20": {
+  "value": 0.9047619047619048,
+  "display": "0.90",
+  "source": "a7_2022_D3_T0.6_N200_K50_jaccard.csv"
+ },
+ "a7.sens_regret_A_cov60_min": {
+  "value": 0.0449574183938281,
+  "display": "0.045",
+  "source": "a7_sensitivity_regret.csv"
+ },
+ "a7.sens_regret_A_cov60_max": {
+  "value": 0.6306340132451446,
+  "display": "0.631",
+  "source": "a7_sensitivity_regret.csv"
+ },
+ "a7.sens_regret_A_iso_max": {
+  "value": 0.1380771573448131,
+  "display": "0.138",
+  "source": "a7_sensitivity_regret.csv"
+ },
+ "a7.sens_regret_B_cov60_max": {
+  "value": 0.0288332792612979,
+  "display": "0.029",
+  "source": "a7_sensitivity_regret.csv"
+ },
+ "a6.all.2022_LODO_CV.gbm.aucpr": {
+  "value": 0.0881418788388757,
+  "display": "0.088",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2022_LODO_CV.gbm.lo": {
+  "value": 0.0574994932946153,
+  "display": "0.057",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2022_LODO_CV.gbm.hi": {
+  "value": 0.1291970531520511,
+  "display": "0.129",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2022_LODO_CV.base_fac.aucpr": {
+  "value": 0.0262044739855084,
+  "display": "0.026",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2022_LODO_CV.base_fac.lo": {
+  "value": 0.0150231320527418,
+  "display": "0.015",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2022_LODO_CV.base_fac.hi": {
+  "value": 0.0369060126954946,
+  "display": "0.037",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2022_LODO_CV.base_river.aucpr": {
+  "value": 0.0100024939173274,
+  "display": "0.010",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2022_LODO_CV.base_river.lo": {
+  "value": 0.0038186604050411,
+  "display": "0.004",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2022_LODO_CV.base_river.hi": {
+  "value": 0.023530723928399,
+  "display": "0.024",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2022_LODO_CV.prevalence": {
+  "value": 0.0120751366195098,
+  "display": "0.0121",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2025_out_of_event.gbm.aucpr": {
+  "value": 0.1558870462260829,
+  "display": "0.156",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2025_out_of_event.gbm.lo": {
+  "value": 0.0494516209663353,
+  "display": "0.049",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2025_out_of_event.gbm.hi": {
+  "value": 0.2331330139549156,
+  "display": "0.233",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2025_out_of_event.base_fac.aucpr": {
+  "value": 0.0156609508644934,
+  "display": "0.016",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2025_out_of_event.base_fac.lo": {
+  "value": 0.0066413090194211,
+  "display": "0.007",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2025_out_of_event.base_fac.hi": {
+  "value": 0.0236947357298707,
+  "display": "0.024",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2025_out_of_event.base_river.aucpr": {
+  "value": 0.0047238979256091,
+  "display": "0.005",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2025_out_of_event.base_river.lo": {
+  "value": 0.0013340516407918,
+  "display": "0.001",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2025_out_of_event.base_river.hi": {
+  "value": 0.0088932618222446,
+  "display": "0.009",
+  "source": "a6_metrics.csv"
+ },
+ "a6.all.2025_out_of_event.prevalence": {
+  "value": 0.003701653319886,
+  "display": "0.0037",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2022_LODO_CV.gbm.aucpr": {
+  "value": 0.0752537991474217,
+  "display": "0.075",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2022_LODO_CV.gbm.lo": {
+  "value": 0.0286039561725972,
+  "display": "0.029",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2022_LODO_CV.gbm.hi": {
+  "value": 0.1463531267608553,
+  "display": "0.146",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2022_LODO_CV.base_fac.aucpr": {
+  "value": 0.0154266861961773,
+  "display": "0.015",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2022_LODO_CV.base_fac.lo": {
+  "value": 0.0062623313874742,
+  "display": "0.006",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2022_LODO_CV.base_fac.hi": {
+  "value": 0.0310426715073366,
+  "display": "0.031",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2022_LODO_CV.base_river.aucpr": {
+  "value": 0.0044215266403712,
+  "display": "0.004",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2022_LODO_CV.base_river.lo": {
+  "value": 0.0016634398069086,
+  "display": "0.002",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2022_LODO_CV.base_river.hi": {
+  "value": 0.0133668602950338,
+  "display": "0.013",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2022_LODO_CV.prevalence": {
+  "value": 0.0068606662372719,
+  "display": "0.0069",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2025_out_of_event.gbm.aucpr": {
+  "value": 0.0863935801118174,
+  "display": "0.086",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2025_out_of_event.gbm.lo": {
+  "value": 0.0158290386739325,
+  "display": "0.016",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2025_out_of_event.gbm.hi": {
+  "value": 0.2025080009102002,
+  "display": "0.203",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2025_out_of_event.base_fac.aucpr": {
+  "value": 0.0061244018422614,
+  "display": "0.006",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2025_out_of_event.base_fac.lo": {
+  "value": 0.0023020291781487,
+  "display": "0.002",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2025_out_of_event.base_fac.hi": {
+  "value": 0.0161256219915948,
+  "display": "0.016",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2025_out_of_event.base_river.aucpr": {
+  "value": 0.0015847872693502,
+  "display": "0.002",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2025_out_of_event.base_river.lo": {
+  "value": 0.0005986315047874,
+  "display": "0.001",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2025_out_of_event.base_river.hi": {
+  "value": 0.0039205854494249,
+  "display": "0.004",
+  "source": "a6_metrics.csv"
+ },
+ "a6.excl_fringe.2025_out_of_event.prevalence": {
+  "value": 0.0010976101047674,
+  "display": "0.0011",
+  "source": "a6_metrics.csv"
+ },
+ "a6.top_shap_feature": {
+  "value": "pop_1km",
+  "display": "pop_1km",
+  "source": "a6_shap.csv"
+ },
+ "a1.cropland_cells": {
+  "value": 555309.0,
+  "display": "555,309",
+  "source": "a1_agreement_overall.csv"
+ },
+ "a1.v1_core_precision": {
+  "value": 0.8674698795180723,
+  "display": "0.87",
+  "source": "a1_v2_validation.csv"
+ },
+ "a2.closed_edges_2022": {
+  "value": 13265.0,
+  "display": "13,265",
+  "source": "a2_2x2_by_threshold.csv"
+ },
+ "a2.closed_edges_2025": {
+  "value": 4067.0,
+  "display": "4,067",
+  "source": "a2_2x2_by_threshold.csv"
+ },
+ "a2.delayed_villages_A": {
+  "value": 501.0,
+  "display": "501",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.delayed_villages_B": {
+  "value": 253.0,
+  "display": "253",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.newly_isolated_villages_A_2025": {
+  "value": 11.0,
+  "display": "11",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.newly_isolated_people_A_2025": {
+  "value": 13412.479242238216,
+  "display": "13,412",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.delayed_villages_A_2025": {
+  "value": 32.0,
+  "display": "32",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.delayed_people_A_2025": {
+  "value": 136221.0381000468,
+  "display": "136,221",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.newly_isolated_villages_B_2025": {
+  "value": 11.0,
+  "display": "11",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.newly_isolated_people_B_2025": {
+  "value": 13412.479242238216,
+  "display": "13,412",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.delayed_villages_B_2025": {
+  "value": 18.0,
+  "display": "18",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.delayed_people_B_2025": {
+  "value": 79976.69501126301,
+  "display": "79,977",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.iso_r500_B": {
+  "value": 141.0,
+  "display": "141",
+  "source": "a2_masks_categories.csv"
+ },
+ "a2.iso_r2000_B": {
+  "value": 57.0,
+  "display": "57",
+  "source": "a2_masks_categories.csv"
+ },
+ "h2.ratio_added_ph_2025": {
+  "value": 4.056532601542634,
+  "display": "4.06",
+  "source": "a2_masks_h1h2.csv"
+ },
+ "h2.ratio_cov60_shortfall_2025": {
+  "value": 19.03568839825485,
+  "display": "19.0",
+  "source": "a2_masks_h1h2.csv"
+ },
+ "h2.ratio_newly_isolated_2025": {
+  "value": 1.0,
+  "display": "1.00",
+  "source": "a2_masks_h1h2.csv"
+ },
+ "a3.rejected": {
+  "value": 127.0,
+  "display": "127",
+  "source": "a3_facilities.parquet"
+ },
+ "a4.wmedian_q05": {
+  "value": 6.308670377731323,
+  "display": "6.31",
+  "source": "a4_province_summary.csv"
+ },
+ "a4.wmedian_q2": {
+  "value": 6.709723313649495,
+  "display": "6.71",
+  "source": "a4_province_summary.csv"
+ },
+ "a6.segments": {
+  "value": 547323.0,
+  "display": "547,323",
+  "source": "a6_segments.parquet / a6_segment_counts.csv"
+ },
+ "a6.positives_2025": {
+  "value": 2026.0,
+  "display": "2,026",
+  "source": "a6_segments.parquet"
+ },
+ "a6.districts_ge20_2025": {
+  "value": 7.0,
+  "display": "7",
+  "source": "a6_segments.parquet"
+ },
+ "a6.top_shap_label": {
+  "value": "population within about 1 km",
+  "display": "population within about 1 km",
+  "source": "a6_shap.csv"
+ },
+ "a7.evpi_additive_ratio": {
+  "value": 84.1404680509026,
+  "display": "84",
+  "source": "a7_2022_D3_T0.6_N200_K50_evppi_validation.csv"
+ },
+ "a7.regret_A_cov60_K5": {
+  "value": 0.8654865290982272,
+  "display": "0.865",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_A_cov60_K50": {
+  "value": 0.2691230849617277,
+  "display": "0.269",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.regret_A_cov60_emb": {
+  "value": 0.1882103215602451,
+  "display": "0.188",
+  "source": "a7_sensitivity_regret.csv"
+ },
+ "a7.regret_A_cov60_2025": {
+  "value": 0.2197449815037037,
+  "display": "0.220",
+  "source": "a7_sensitivity_regret.csv"
+ },
+ "a7.regret_A_cov60_K20_pct": {
+  "value": 46.90873377580117,
+  "display": "47 %",
+  "source": "a7_2022_D3_T0.6_N200_K50_regret.csv"
+ },
+ "a7.sens_regret_A_cov60_min_pct": {
+  "value": 4.49574183938281,
+  "display": "4",
+  "source": "a7_sensitivity_regret.csv"
+ },
+ "a7.sens_regret_A_cov60_max_pct": {
+  "value": 63.06340132451446,
+  "display": "63 %",
+  "source": "a7_sensitivity_regret.csv"
+ }
+}
