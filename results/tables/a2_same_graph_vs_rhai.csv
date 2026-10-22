@@ -1,0 +1,25 @@
+metric,value
+A: villages differing >1e-6 min,443.0
+A: max |diff| min,55.76254804635434
+A: mean diff (same - rhai) min,0.01367994756893048
+A: isolated same-graph,2.0
+A: isolated rhai,2.0
+B: villages differing >1e-6 min,3.0
+B: max |diff| min,0.020946569707344764
+B: mean diff (same - rhai) min,-1.2180598783131063e-05
+B: isolated same-graph,0.0
+B: isolated rhai,0.0
+rhai: n,5157.0
+rhai: wmedian A,14.270115668379889
+rhai: wmedian B,7.098866275905168
+rhai: overstatement x,2.010196433311504
+rhai: unweighted median A,19.117534383304548
+rhai: unweighted median B,9.185252626257068
+rhai: villages slower under B (>0.01),17.0
+same: n,5157.0
+same: wmedian A,14.269858841473203
+same: wmedian B,7.098866275905168
+same: overstatement x,2.0101602547307698
+same: unweighted median A,19.0055826695203
+same: unweighted median B,9.185252626257068
+same: villages slower under B (>0.01),0.0
