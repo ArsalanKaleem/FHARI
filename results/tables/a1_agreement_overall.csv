@@ -1,0 +1,11 @@
+,value
+n_cells,555309.0
+pearson_r,0.9999999777561794
+spearman_rho,0.9974786748147275
+mae,0.0002655822057047625
+mean_diff_ours_minus_ref,-3.063226905647665e-06
+share_absdiff_lt_0.1,1.0
+treated_ref_pct,15.837668757394532
+treated_ours_pct,15.853515790307737
+treated_agreement_pct,99.98415296708679
+cohen_kappa,0.9994058000660376

@@ -1,0 +1,6 @@
+source,src_rows,src_dup_ids,matched,base_rows,coverage_pct,src_ids_not_in_base
+rhai_villages_gpkg,5160,0,5159,5159,100.0,[1]
+rhai_population,5159,0,5159,5159,100.0,[]
+rhai_A,5159,0,5159,5159,100.0,[]
+rhai_B,5159,0,5159,5159,100.0,[]
+swai,5159,0,5159,5159,100.0,[]
