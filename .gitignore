@@ -1,0 +1,45 @@
+# environment and caches
+.venv/
+__pycache__/
+*.pyc
+cache/
+
+# manuscript and Zenodo deposit (kept out of this repository)
+docs/paper/
+docs/manuscript_skeleton.md
+docs/manuscript_rendered.md
+manuscript_build/
+34_render_manuscript.py
+36_paper_text.py
+zenodo/
+
+# data: only small files needed to regenerate the final tables and figures are versioned
+data/*
+!data/inspect_report.txt
+!data/village_master.parquet
+!data/village_population_alt.parquet
+!data/a2_normal_times.parquet
+!data/a2_flood/
+!data/a3_facilities.parquet
+!data/a3_placement_probs.parquet
+!data/a4_village_distributions.parquet
+!data/a4/
+data/a4/*
+!data/a4/base/
+data/a4/base/*
+!data/a4/base/placements.parquet
+!data/a7/
+data/a7/*_N30_K10/
+!data/check4_spotcheck_candidates.csv
+!data/check5_dw_samples.csv
+
+# logs: keep per-script environment records, drop run output
+logs/*
+!logs/*.env.json
+!logs/a1_source_hash.json
+!logs/a3_source_hash.json
+
+# smoke-test outputs (3-draw A7 test run)
+results/tables/a7_2022_D3_T0.6_N30_K10_*
+logs/34_*
+logs/36_*
